@@ -1,0 +1,37 @@
+https://blog.csdn.net/qq_42711381/article/details/106756977?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242
+
+
+@RestController
+@SpringBootApplication
+public class DemoApplication {
+
+    public static void main(String[] args) {
+
+        SpringApplication.run(DemoApplication.class, args);
+    }
+    @RequestMapping("/")
+    public String index(){
+        return "HelloWord";
+    }
+}
+
+无效的建立就把pojo中的注解(lombok)删掉，手动生成
+
+netstat -ano | findstr 8080
+查看8080端口的PID
+
+layui前端组件   x-admin后台模板
+
+
+        <!--        引入thymeleaf-->
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring5</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-java8time</artifactId>
+        </dependency>
+
+html中引入thymeleaf
+xmlns:th="http://www.thymeleaf.org"
