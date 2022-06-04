@@ -1,0 +1,15 @@
+ALTER USER 'root'@'localhost' IDENTIFIED BY '1234'; //因为我们随便修改密码时,一般都不满足它的策略
+会报以下错误:
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+
+解决办法:
+一定要先修改默认密码为: 1234 满足它的策略,再进行下面的操作:
+SHOW VARIABLES LIKE 'validate_password%'; //查看密码策略
+
+修改密码长度：
+set global validate_password.length=1; //（长度）
+修改密码等级：
+set global validate_password.policy=0; //（等级）
+
+设置成自己想要的密码:
+ALTER USER 'root'@'localhost' IDENTIFIED BY '1234';
