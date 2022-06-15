@@ -797,7 +797,7 @@ public class Dept {
 ```
 ### collection
 - collection：用来处理一对多的映射关系
-- ofType：表示该属性对饮的集合中存储的数据的类型
+- ofType：表示该属性对应的集合中存储的数据的类型
 ```xml
 <resultMap id="DeptAndEmpResultMap" type="Dept">
 	<id property="did" column="did"></id>
